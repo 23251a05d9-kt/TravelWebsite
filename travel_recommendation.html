@@ -5,7 +5,137 @@
   </head>
 
   <body>
-    
+
+    <!-- ================= NAVIGATION BAR (HOME PAGE) ================= -->
+    <nav style="background-color:#4b2e83; padding:15px; display:flex; align-items:center; justify-content:space-between;">
+      
+      <div style="color:white; font-size:22px; font-weight:bold;">
+        Travel Recommendation
+      </div>
+
+      <div>
+        <a href="#home" style="color:white; margin:10px; text-decoration:none;">Home</a>
+        <a href="#about" style="color:white; margin:10px; text-decoration:none;">About Us</a>
+        <a href="#contact" style="color:white; margin:10px; text-decoration:none;">Contact Us</a>
+      </div>
+
+      <div>
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="Search (beach, temple, country)"
+          style="padding:5px;"
+        />
+        <button id="searchBtn" style="padding:6px; margin-left:5px;">Search</button>
+        <button id="clearBtn" style="padding:6px; margin-left:5px;">Reset</button>
+      </div>
+
+    </nav>
+
+    <!-- ================= HOME PAGE ================= -->
+    <section 
+      id="home"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      "
+    >
+      <div style="background-color: rgba(0,0,0,0.6); padding: 30px; border-radius: 10px;">
+        <h1>Welcome to Travel Recommendation</h1>
+        <p style="font-size:18px; max-width:600px;">
+          Discover amazing travel destinations around the world.
+          Search for beaches, temples, or countries and get personalized
+          recommendations for your next journey.
+        </p>
+
+        <div style="margin-top:20px;">
+          <a href="#" style="margin:10px; color:white;">🌐</a>
+          <a href="#" style="margin:10px; color:white;">📸</a>
+          <a href="#" style="margin:10px; color:white;">🐦</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT US PAGE ================= -->
+    <section id="about" style="padding:50px;">
+
+      <nav style="background-color:#4b2e83; padding:15px; margin-bottom:30px;">
+        <a href="#home" style="color:white; margin:15px; text-decoration:none;">Home</a>
+        <a href="#about" style="color:white; margin:15px; text-decoration:none;">About Us</a>
+        <a href="#contact" style="color:white; margin:15px; text-decoration:none;">Contact Us</a>
+      </nav>
+
+      <h2>About Us</h2>
+
+      <p style="max-width:800px; font-size:18px;">
+        Travel Recommendation is a platform designed to help travelers
+        discover exciting destinations around the world. Our goal is to
+        provide curated travel suggestions based on user interests.
+      </p>
+
+      <h3 style="margin-top:40px;">Our Team</h3>
+
+      <div style="display:flex; gap:30px; margin-top:20px;">
+        <div style="border:1px solid #ccc; padding:20px; width:200px;">
+          <h4>Tejasvi</h4>
+          <p>Frontend Developer</p>
+        </div>
+
+        <div style="border:1px solid #ccc; padding:20px; width:200px;">
+          <h4>Alex</h4>
+          <p>Backend Developer</p>
+        </div>
+
+        <div style="border:1px solid #ccc; padding:20px; width:200px;">
+          <h4>Sam</h4>
+          <p>UI/UX Designer</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ================= CONTACT US PAGE ================= -->
+    <section id="contact" style="padding:50px;">
+
+      <nav style="background-color:#4b2e83; padding:15px; margin-bottom:30px;">
+        <a href="#home" style="color:white; margin:15px; text-decoration:none;">Home</a>
+        <a href="#about" style="color:white; margin:15px; text-decoration:none;">About Us</a>
+        <a href="#contact" style="color:white; margin:15px; text-decoration:none;">Contact Us</a>
+      </nav>
+
+      <h2>Contact Us</h2>
+
+      <p style="font-size:18px; max-width:700px;">
+        Have questions or suggestions? Feel free to reach out using the form below.
+      </p>
+
+      <form style="max-width:500px; margin-top:30px;">
+        <label>Name:</label><br/>
+        <input type="text" placeholder="Enter your name"
+               style="width:100%; padding:10px; margin-bottom:15px;"/>
+
+        <label>Email:</label><br/>
+        <input type="email" placeholder="Enter your email"
+               style="width:100%; padding:10px; margin-bottom:15px;"/>
+
+        <label>Message:</label><br/>
+        <textarea rows="5" placeholder="Write your message here"
+                  style="width:100%; padding:10px; margin-bottom:20px;"></textarea>
+
+        <button type="submit"
+                style="padding:10px 20px; background-color:#4b2e83; color:white; border:none;">
+          Submit
+        </button>
+      </form>
+
+    </section>
+
   </body>
 </html>
-
